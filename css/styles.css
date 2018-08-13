@@ -1,0 +1,84 @@
+body{
+     margin: 0;
+     padding: 50px 0;
+     background-color: bisque;
+     color: black;
+
+}
+
+.container{
+     width: 80%; /*vai sempre ocupar 80%*/ 
+     max-width: 1200px; /* determina a largura maxima da tela*/
+     margin: 0 auto;
+}
+
+.container *{
+     box-sizing: border-box;/*ajuda na navegação de alguns navegadores ex firefox*/
+}
+
+.flex-outer{
+     max-width: 800px;
+     margin: auto 0;
+}
+
+.flex-outer,
+.flex-inner{
+     list-style-type: none;
+}
+
+.flex-outer li,
+.flex-inner{
+     display: flex;
+     flex-wrap: wrap; /* semelhante ao row*/
+     align-items: center;
+
+}
+
+.flex-inner{
+     padding: 0 8px;
+     justify-content: space-between;
+}
+
+.flex-outer>li>label,
+.flex-outer li p{
+     flex: 1 0 20px;
+     max-width: 220px;
+}
+
+.flex-outer li textarea, input{
+     padding: 20px ;
+     border: none;
+     /* display: flex;
+     justify-content: space-between; */
+        
+}
+
+.flex-outer>li>label+*,
+.flex-inner{
+     flex: 1 0 200px;
+}
+
+.flex-outer> li{
+     margin: 10px;
+}
+
+.flex-outer li label, /*para selecionar mais de um item/tag/conjunto usa-se , */
+.flex-outer li p{
+     padding: 8px;
+     font-weight: 400;
+     letter-spacing: 0.5px;
+     text-transform: uppercase; /* caixa alta*/
+}
+
+.flex-outer li button{
+     margin-left: auto;
+     padding: 8px 16px;
+     border: none;
+     background: lightgray;
+     color: black;
+     text-transform: uppercase;
+     border-radius: 20px;
+     background-color: blueviolet;
+     
+}
+

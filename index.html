@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Meu formulário</title>
+</head>
+<body>
+    
+<div class="container">
+  <form> <!cria automaticamente um formulario>
+    <ul class="flex-outer">
+      <li>
+        <label for="first-name">Primeiro Nome</label>
+        <input type="text" id="first-name" placeholder="Seu primeiro nome aqui">
+      </li>
+      <li>
+        <label for="last-name">Profissão</label>
+        <input type="text" id="last-name" placeholder="">
+      </li>
+      <li>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="joao@gmail.com">
+      </li>
+      <li>
+        <label for="phone">Celular</label>
+        <input type="tel" id="phone" placeholder="(11)99999-9999">
+      </li>
+      <li>
+        <label for="message">Messagem</label>
+        <textarea rows="6"  placeholder="Mande sua mensagem aqui"></textarea>
+      </li>
+      <li>
+        <p>Idade</p>
+        <ul class="flex-inner">
+          <li>
+            <input type="checkbox"> <!modelo de selecionar>
+            <label>20-29</label>
+          </li>
+          <li>
+            <input type="checkbox">
+            <label>30-39</label> 
+          </li>
+          <li>
+            <input type="checkbox">
+            <label>40+</label>
+            </li>
+          <li>
+            <input type="checkbox">
+            <label>60+</label>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <button type="submit">Cadastrar</button>
+      </li>
+    </ul>
+  </form>
+</div>
+</body>
+</html>
